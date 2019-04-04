@@ -1,0 +1,211 @@
+
+	.form-field {
+		margin:2rem 0 0 0;
+		font-size:16px;
+		position: relative;
+		padding: 0;
+	}
+	.form-field:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+	input, textarea {
+		color: #8a8a8a !important;
+    	padding: 0 0 5px 0;
+    	background-color: transparent !important;
+    	border: none;
+    	width: 100%;
+    	font-size:16px;
+    	border: none;
+    	border-bottom: 1px solid #8a8a8a;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+	textarea {
+	    height:80px;
+	}d
+	input:-webkit-autofill {
+        background-position: 0 0;
+    }
+	input:focus, textarea:focus  {
+		border-bottom: 1px solid #66afe9;
+		outline: none;
+	}
+	select:focus, select:-webkit-autofill {
+		border-bottom: 1px solid #66afe9;
+		outline: none;		
+	}
+	.field-label {
+		color: #8a8a8a !important;
+		padding: 0;
+		float: left;
+		font-family: sans-serif;
+		font-size:12px;
+		margin-right: 10px;
+		width: 100%;
+		position: absolute;
+		top: -14px;
+		left: 0;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+	.form-field.required .field-label:after, .required-statement:before {
+		content: ' *';
+	}
+	.pd-select .field-label {
+		left: 10px;
+		width: auto;
+		top: 30px;
+		pointer-events: none;
+	}
+	.form-field.activated .field-label, 
+	.pd-select.form-field.activated .field-label, 
+	.pd-select.form-field.error .field-label, 
+	.form-field.error .field-label, 
+	.form-errors .form-field .field-label,
+	.pd-select.form-errors .form-field .field-label 
+	{
+		top: -18px;
+		left: 0;
+		font-size: 12px;
+	}
+	input.text:focus + label.field-label {
+		font-size: 12px;
+	}
+	.pd-select {
+		border-bottom: none;
+	}
+	.select {
+		width: 99%;
+		border: none;
+		height: 40px;
+		border: 1px solid #8a8a8a;
+		margin: 18px 0 0 0;
+		background: transparent;
+		color: #8a8a8a;
+	}
+	.pd-radio .value {
+	    display: flex;
+	    padding: 1rem 0;
+	}
+	.pd-radio .value > span {
+	    display: flex;
+	    margin-right: 1rem;
+	}
+	.pd-radio .value > span input {
+	    width: auto;
+	}
+	.pd-radio .value > span label {
+	    color: #8a8a8a !important;
+        font-family: arial;
+	}
+	.submit input, .submit input:active {
+		width: 100%;
+		padding:20px;
+		font-size: 14px;
+		border: 1px solid #8a8a8a;
+		text-transform: uppercase;
+	    padding: 0.8rem 3rem;
+	    font-size: 1rem;
+	    font-weight: 600;
+	    display: inline-block;
+	    letter-spacing: 1px;
+	    white-space: nowrap;
+	    color: #fff;
+	    background-color: rgba(138, 138, 138, 0.4);
+	    font-weight: 400;
+	    letter-spacing: 2px;
+	    margin-top: 1rem;
+	    cursor:pointer;
+	}
+	.submit input:hover {
+	    background-color:#464646 !important;
+	}
+	.error.no-label, .errors {
+		color: #cc1f20;
+		margin: 0 !important;
+		font-family: sans-serif;
+	}
+	.description { font-family: sans-serif;}
+	.before-content {
+		font-family: sans-serif;
+		position: relative;
+		color: #333;
+	}
+	.before-content p {
+	    font-size: 16px;
+    	line-height: 2rem;
+    	color: #8a8a8a;
+    	margin: 0;
+	}
+	.description a, p {
+	    color: #8a8a8a;
+	    font-size: 16px;
+	}
+	span.description {
+	    font-size: 12px;
+	}
+	.caption span {
+	    display: none;
+	}
+	p.phone {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	p.phone a {
+    	color: #bfbfbf;
+    	text-decoration: none;
+	}
+	.before-content p.third-party {
+	    font-size:11px;
+	    line-height: 15px;
+	}
+	.before-content h1 {
+        font-family: "Open Sans Condensed", sans-serif, sans-serif;
+        font-weight: 200;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        line-height:1.1;
+        font-size: 34px;
+        padding: 0;
+        margin: 0 0 10px 0;
+        text-transform: uppercase;
+        color: #fff; /*or #333 for contact page*/
+	}
+	p span, h3 span, p span span {
+	    color: #8a8a8a !important;
+	}
+	.thanks p {
+		font-size: 12px;
+    	margin: 0 0 1rem 0;
+    	font-family: sans-serif;
+    	color: #8a8a8a;
+	}	
+	@media screen and (min-width: 48em) {
+	   .before-content h1 {
+	        font-size: 3rem;
+	        padding-top: 7px;
+	    }
+	    .before-content p {
+	    	font-size: 16px;
+	    }
+	    .caption span {
+	    	display: inline;
+	    }
+	   .before-content  {
+	   	float: left;
+	   	width: 30%;
+	   }
+	   .form-content {
+	   	float: right;
+	   	width: 68%;
+	   }
+	   .submit input {
+	       margin-top:4rem;
+	   }
+	}

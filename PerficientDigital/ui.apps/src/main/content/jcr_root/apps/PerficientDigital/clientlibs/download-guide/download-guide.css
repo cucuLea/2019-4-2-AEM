@@ -1,0 +1,183 @@
+
+	.form-field {
+		margin:3rem 0 0 0;
+		font-size:16px;
+		position: relative;
+		padding: 0;
+	}
+	.form-field.pd-select {
+	    margin-top:2rem;
+	}
+	.form-field:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+	input, textarea {
+		color: #8a8a8a !important;
+    	padding: 0 0 5px 0;
+    	background-color: transparent;
+    	border: none;
+    	width: 100%;
+    	font-size:16px;
+    	border: none;
+    	border-bottom: 1px solid #8a8a8a;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+	input:focus, textarea:focus  {
+		border-bottom: 1px solid #66afe9;
+		outline: none;
+	}
+	select:focus {
+		border-bottom: 1px solid #66afe9;
+		outline: none;		
+	}
+	textarea {
+	}
+	.field-label {
+		color: #8a8a8a !important;
+		padding: 0;
+		float: left;
+		font-family: sans-serif;
+		font-size:16px;
+		margin-right: 10px;
+		width: 100%;
+		position: absolute;
+		top: -14px;
+		left: 0;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+	.form-field.required .field-label:after, .required-statement:before {
+		content: ' *';
+		color: #cc1f20;
+	}
+	.pd-select .field-label {
+		left: 10px;
+		width: auto;
+		top: 10px;
+		pointer-events: none;
+	}
+	.form-field.activated .field-label, 
+	.pd-select.form-field.activated .field-label, 
+	.pd-select.form-field.error .field-label, 
+	.form-field.error .field-label, 
+	.form-errors .form-field .field-label,
+	.pd-select.form-errors .form-field .field-label,
+	.cookied .form-field .field-label,
+	.cookied .pd-select .form-field .field-label {
+		top: -18px;
+		left: 0;
+		font-size: 12px;
+	}
+	input.text:focus + label.field-label {
+		font-size: 10px;
+	}
+	.pd-select {
+		border-bottom: none;
+	}
+	.select {
+		width: 99%;
+		border: none;
+		height: 40px;
+		border: 1px solid #8a8a8a;
+		margin: 0;
+		background: transparent;
+		color: #8a8a8a;
+	}
+	.pd-radio .value {
+	    display: flex;
+	    padding: 1rem 0;
+	}
+	.pd-radio .value > span {
+	    display: flex;
+	    margin-right: 1rem;
+	}
+	.pd-radio .value > span input {
+	    width: auto;
+	}
+	.pd-radio .value > span label {
+	    color: #8a8a8a !important;
+        font-family: arial;
+	}
+	.submit input {
+		width: 100%;
+		padding:20px;
+		font-size: 14px;
+		border: 1px solid #8a8a8a;
+		text-transform: uppercase;
+	    padding: 0.8rem 3rem;
+	    font-size: 1.1rem;
+	    font-weight: 600;
+	    display: inline-block;
+	    letter-spacing: 1px;
+	    white-space: nowrap;
+	    color: #fff !important;
+	    background-color: #323232;
+	    font-weight: 300;
+	    letter-spacing: 2px;
+	    margin-top: 5rem;
+	}
+	.error.no-label, .errors {
+		color: #cc1f20;
+		margin: 0 !important;
+		font-family: sans-serif;
+	}
+	p span, h3 span, p span span, .description a {
+	    color: #8a8a8a !important;
+	}
+	.description { font-family: sans-serif;}
+	.before-content {
+		font-family: sans-serif;
+		position: relative;
+		color: #333;
+	}
+	.before-content p {
+	    font-size:1rem;
+	    line-height:1.6rem;
+	}
+	.before-content p.required-statement {
+	    font-size:12px;
+	}
+	.before-content h1 {
+	    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 9px;
+        font-family: "Open Sans Condensed", sans-serif, sans-serif;
+        font-weight: 200;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        margin-bottom: 28px;
+        margin-top:0;
+        line-height:1.1;
+        font-size: 1.4rem;
+	}
+	.thanks p {
+		font-size: 1.2rem;
+    	margin: 0 0 1rem 0;
+    	font-family: sans-serif;
+	}
+	@media screen and (min-width: 600px) {
+	   .before-content h1 {
+	        font-size:2.6rem;
+	    }
+	   p.required-statement {
+    	    position: absolute;
+    	    top: 13px;
+    	    right:0;
+	    }
+		.two-col-form {	
+			-webkit-columns: 2;
+			-moz-columns: 2 ;
+			columns: 2 ;
+		}
+		.cookied .two-col-form {
+			-webkit-columns: 1;
+			-moz-columns: 1 ;
+			columns: 1 ;		    
+		}
+	}

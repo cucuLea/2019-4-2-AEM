@@ -1,0 +1,73 @@
+<sly data-sly-use.headerItems="com.aem.community.core.models.HeaderComponent"></sly>
+<header role="banner">
+	<div class="search-icon" id="search-trigger-overlay">
+		<span></span>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="hidden-md-up mobile-logo">
+				<a href="${headerItems.logoLinkUrl}">
+					<img src="${headerItems.logoImageUrl}" alt="${headerItems.logoAltText}">
+				</a>
+			</div>
+		<button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#mobilenav">
+     		<div class="menu-icon">
+      			<div class="center-bar"></div>
+    		</div>
+		</button>
+
+		<nav class="navbar navbar-full">
+  			<div class="collapse navbar-toggleable-sm" id="mobilenav">
+				<div class="nav-block">
+  					<div class="main-nav">
+  						<ul>
+	    					<li class="nav-item hidden-sm-down">
+	    						<a href="${headerItems.logoLinkUrl}" class="logo">
+									<img src="${headerItems.logoImageUrl}" alt="${headerItems.logoAltText}">
+	    						</a>
+	    					</li>
+
+	    					<!--/* BEGIN MIDDLE NAVIGATION */-->		
+								<li class="nav-item " data-sly-repeat.item="${headerItems.navigationItems}">
+									<a href="${item.linkUrl}" class="nav-link dropdown-toggle"
+									id="servicesMenu" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false"> ${item.linkName} </a>
+
+									<div class="dropdown-menu mega-menu" aria-labelledby="servicesMenu">
+										<div class="menu-title">
+											<a href="${item.linkUrl}">${item.linkName}</a>
+										</div>
+
+										<div class="menu-block">
+											<ul class="list-unstyled">
+    											<sly  data-sly-repeat.item2="${item.childPages}">
+													<li class="mega-menu-item">
+    													<a href="${item2.linkUrl}.html">${item2.linkName}</a>
+    												</li>
+    											</sly>
+											</ul>
+										</div>
+							    	</div>
+								</li>							
+
+	    					<!--/* END MIDDLE NAVIGATION */-->			      
+	     				 </ul>
+					</div>
+	      					<!--/* BEGIN RIGHT NAVIGATION */-->		
+	    					<div class="utility-nav">
+    							<ul>
+	      							<li data-sly-repeat.item="${headerItems.rightLinks}">
+										<a href='${item.linkUrl}'>${item.linkName}</a>
+									</li>
+								</ul>   
+    						</div> 
+
+	    					<!--/* END RIGHT NAVIGATION */--> 
+	    			</div>						
+  				</div>
+			</nav>
+		</div>
+	</div>
+</header>
+
+

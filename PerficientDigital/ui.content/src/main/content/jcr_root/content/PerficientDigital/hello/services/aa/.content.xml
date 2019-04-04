@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2019-03-22T12:25:03.849+08:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2019-03-27T15:43:11.008+08:00"
+        cq:lastReplicatedBy="workflow-process-service"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/PerficientDigital/templates/home-page-template"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="aa"
+        jcr:uuid="de398381-7052-4e67-b52c-26e91a56e544"
+        sling:resourceType="/apps/PerficientDigital/components/structure/homePage"/>
+</jcr:root>

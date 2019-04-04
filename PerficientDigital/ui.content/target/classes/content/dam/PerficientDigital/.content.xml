@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="sling:OrderedFolder">
+    <jcr:content
+        jcr:primaryType="nt:unstructured"
+        jcr:title="PerficientDigital">
+        <folderThumbnail/>
+    </jcr:content>
+    <asset.jpg/>
+    <perficient-logo.png/>
+    <perficient-logo-grey.png/>
+    <hero-services-lg.jpg/>
+    <image_04.png/>
+    <Bug_x0020_Tracking_x0020_and_x0020_Reporting_x0020_System_x0028_1_x0029_.pdf/>
+</jcr:root>

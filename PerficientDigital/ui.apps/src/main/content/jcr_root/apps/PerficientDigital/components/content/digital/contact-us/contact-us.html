@@ -1,0 +1,63 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientLib.css @ categories='app.perificientDigital.contact-us'}" />
+<sly data-sly-call="${clientLib.js @ categories='app.perificientDigital.contact-us'}" />
+<sly data-sly-use.contantUsItems="com.aem.community.core.models.IContantUsComponent"></sly>
+<section class="contact-form ">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+			    <!-- LEFT PART -->
+				<div class="before-content">
+					<h1>${contantUsItems.title}</h1>
+					<p class="caption">
+						<span>${contantUsItems.caption @context='html'}</span> 
+					</p>
+					<p class="third-party">${contantUsItems.receiveEmailsText}</p>
+					<p class="third-party">You can alse call us at ${contantUsItems.phoneNumber}</p>
+				</div>
+				<!-- END -->
+				
+				<!-- RIGHT PART FORM-->
+				<div class="form-content">
+				<form id="emailInformationForm">
+					<p class="form-field pd-text required activated">
+						<label class="field-label" for="firstName">${contantUsItems.firstName}</label>
+						<input type="text" id="firstName" name="firstName" class="text contact-us-form" size="30" maxlength="40" required>
+						<div id="error_for_firstName"  style="display: none;color:red">cant be empty!</div>
+					</p>
+					
+
+					<p class="form-field pd-text required    ">
+						<label class="field-label" for="lastName">${contantUsItems.lastName}</label> 
+						<input type="text" id="lastName" name="lastName" class="text contact-us-form" size="30" maxlength="80" onchange="" required>
+						<div id="error_for_lastName"  style="display: none;color:red">cant be empty!</div>
+					</p>
+					
+
+					<p class="form-field pd-text required ">
+						<label class="field-label" for="workEmail">${contantUsItems.workEmail}</label> 
+                        <input type="text" id="workEmail" name="workEmail" value="" class="text contact-us-form" size="30" maxlength="255" required>
+                        <div id="error_for_workEmail"  style="display: none;color:red">cant be empty!</div>
+					</p>
+					
+				
+					<sly data-sly-repeat.fielditem="${contantUsItems.additionalFormItems}">
+					<p class="form-field pd-text ${fielditem.isRequired?'required':''}">
+						<label class="field-label">${fielditem.label}</label>
+						<input type="text" id="${fielditem.label}" name="additionalField-value" value="" class="text contact-us-form" size="30" maxlength="255" ${fielditem.isRequired?'required':''}/>
+						<input type="hidden" name="additionalField-label" value="${fieldItem.label}" />
+						<div id="error_for_${fielditem.label}" style="display: none;color:red">cant be empty!</div>
+					</p> 
+										
+					</sly>
+
+					<p class="submit">
+						<input type="button" value="Send" onclick="sendEmail()"/>
+					</p>
+					</form>
+					<!-- END -->
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

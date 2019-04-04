@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>PerficientDigital - UI content</comment>
+<entry key="createdBy">lea.li</entry>
+<entry key="name">PerficientDigital.ui.content</entry>
+<entry key="created">2019-04-03T18:09:22.209+0800</entry>
+<entry key="groupId">com.perficient</entry>
+<entry key="version">1.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">PerficientDigital</entry>
+<entry key="description">UI content package for PerficientDigital</entry>
+<entry key="artifactId">PerficientDigital.ui.content</entry>
+<entry key="path">/etc/packages/PerficientDigital/PerficientDigital.ui.content.zip</entry>
+</properties>

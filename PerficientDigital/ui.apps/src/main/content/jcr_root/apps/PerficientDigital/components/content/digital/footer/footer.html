@@ -1,0 +1,55 @@
+<sly data-sly-use.footerItems="com.aem.community.core.models.FooterComponent"></sly>
+<section class="footer-icons">
+  <div class="container">
+    <div class="row">
+     <div class="col-sm-12">
+        <ul class="hidden-sm-down pull-left">
+          <li>
+            <a href="${footerItems.logoLink}">
+              <img src="${footerItems.companyLogo}">
+            </a>
+          </li>
+          <li>
+            <a href="#">${footerItems.privacyPolicyText}</a>
+            </li>
+          <li>
+            ${footerItems.copyright}    
+          </li>
+        </ul>
+        <ul class="list-unstyled">
+		  <li data-sly-repeat.item="${footerItems.socialMediasItems}">
+				<a href="${item.link}"><i class="${item.css}"></i></a>
+          </li>
+        </ul> 
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="desktop-footer">
+    <div class="footer-slogan">
+      ${footerItems.slogan}
+    </div>
+    <div class="footer-links hidden-md-up">
+      <ul>
+        <li>
+          <a href="#">${footerItems.privacyPolicyText}</a>
+        </li>
+      </ul>
+      <p>${footerItems.copyright}</p>
+    </div>
+    <div class="footer-share">
+      <button class="dropdown-toggle" id="sharethis" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Share This Page            
+      </button>
+      <div class="dropdown-menu sharelinks" aria-labelledby="sharethis">
+        <ul class="list-unstyled">
+          <li data-sly-repeat.item="${footerItems.socialMediasItems}">
+				<a href="${item.link}"><i class="${item.css}"></i></a>
+          </li>
+        </ul> 
+      </div>
+    </div>
+  </div>
+
+</footer>

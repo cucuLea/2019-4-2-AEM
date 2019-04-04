@@ -1,0 +1,20 @@
+{
+    "additionalFormItems": {
+      "jcr:primaryType": "nt:unstructured",
+        "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "isRequired": "false",
+        "label": "Phone"
+        },
+      "item1": {
+        "jcr:primaryType": "nt:unstructured",
+        "isRequired": "false",
+        "label": "Company"
+        },
+	  "item2": {
+        "jcr:primaryType": "nt:unstructured",
+        "isRequired": "false",
+        "label": "How can we help your business?"
+        }
+    } 
+}

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2019-03-28T14:19:03.502+08:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2019-03-27T19:30:41.491+08:00"
+        cq:lastReplicatedBy="workflow-process-service"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/PerficientDigital/templates/home-page-template"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Home Page"
+        jcr:uuid="d4fae68e-81e4-4b5c-b913-2aa6176309a3"
+        sling:resourceType="/apps/PerficientDigital/components/structure/homePage"
+        author="lea"
+        trainer="hello"
+        trainingDate="{Date}2019-03-01T00:00:00.000+08:00">
+        <headerIparsys
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/iparsys">
+            <header
+                jcr:created="{Date}2019-03-22T11:57:37.917+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2019-03-22T12:32:10.402+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="PerficientDigital/components/content/digital/header"
+                aboutLinkName="About"
+                aboutLinkUrl="https://www.perficient.com/"
+                careersLinkName="Carees"
+                careersLinkUrl="https://www.perficient.com/"
+                contactLinkName="Contact"
+                contactLinkUrl="https://www.perficient.com/"
+                investorsLinkName="Investors"
+                investorsLinkUrl="https://www.perficient.com/"
+                logoAltText="perficient-logo"
+                logoImageUrl="/content/dam/PerficientDigital/perficient-logo.png"
+                logoLinkUrl="https://www.perficient.com/">
+                <navigationItems jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        linkName="Services"
+                        linkUrl="/content/PerficientDigital/hello/services"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        linkName="Industries"
+                        linkUrl="/content/PerficientDigital/hello/industries"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        linkName="Partners"
+                        linkUrl="/content/PerficientDigital/hello/partners"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        linkName="Work"
+                        linkUrl="/content/PerficientDigital/hello/work"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        linkName="Insights"
+                        linkUrl="/content/PerficientDigital/hello/insights"/>
+                </navigationItems>
+                <links jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        linkName="About"
+                        linkUrl="https://www.perficient.com/"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        linkName="Investors"
+                        linkUrl="https://www.perficient.com/"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        linkName="Careers"
+                        linkUrl="https://www.perficient.com/"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        linkName="Contact"
+                        linkUrl="https://www.perficient.com/"/>
+                </links>
+            </header>
+        </headerIparsys>
+        <footerIparsys
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/iparsys">
+            <contact_us
+                jcr:created="{Date}2019-03-22T12:33:00.608+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2019-03-22T12:39:54.524+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="PerficientDigital/components/content/digital/contact-us"
+                firstName="Frist Name"
+                lastName="Last Name"
+                phoneNumber="(333)333-3333"
+                receiveEmailsText="You will receive emails from Perficient about upcoming events and guides. We will never give your contact information to a third party."
+                textIsRich="true"
+                title="CONTACT US"
+                words="&lt;p>We appreciate you interest in Perficient.&lt;/p>&#xd;&#xa;&lt;p>Please complete this form to tell us how we can help you.&lt;i>*Indicates a require field&lt;/i>&lt;/p>&#xd;&#xa;"
+                workEmail="Work Email">
+                <additionalFormItems jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        isRequired="false"
+                        label="Phone"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        isRequired="false"
+                        label="Company"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        isRequired="false"
+                        label="How can we help your business?"/>
+                </additionalFormItems>
+            </contact_us>
+            <footer
+                jcr:created="{Date}2019-03-22T12:33:04.518+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2019-03-22T12:37:32.577+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="PerficientDigital/components/content/digital/footer"
+                companyLogo="/content/dam/PerficientDigital/perficient-logo-grey.png"
+                copyright="© 2019 Perficient, Inc. All Rights Reserved"
+                logoLink="https://www.perficient.com/"
+                privacyPolicyText="Private Policy"
+                slogan="Vision. Execution. Value.">
+                <socialMediasItems jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        Icons="Blogs"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        Icons="Twitter"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        Icons="Facebook"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        Icons="Linkedin"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        Icons="Youtube"/>
+                </socialMediasItems>
+            </footer>
+        </footerIparsys>
+    </jcr:content>
+    <services/>
+    <industries/>
+    <partners/>
+    <work/>
+    <insights/>
+    <insight-page/>
+</jcr:root>

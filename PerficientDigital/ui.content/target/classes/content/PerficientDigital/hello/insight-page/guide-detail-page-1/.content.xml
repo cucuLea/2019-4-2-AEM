@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2019-03-29T13:25:33.064+08:00"
+        cq:lastModifiedBy="admin"
+        cq:tags="[perficient-digital:guide,perficient-digital:]"
+        cq:template="/apps/PerficientDigital/templates/guide-detail-template"
+        jcr:lastModified="{Date}2019-03-29T13:25:33.027+08:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Guide Detail Page-1"
+        sling:resourceType="/apps/PerficientDigital/components/structure/guideDetailPage"
+        guidePDF_x0040_MoveFrom="/apps/PerficientDigital/templates/guide-detail-template/guidePDF.sftmp"
+        pdfUrl="/content/dam/PerficientDigital/Bug Tracking and Reporting System(1).pdf">
+        <guideDetail
+            jcr:lastModified="{Date}2019-03-22T12:52:33.554+08:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="PerficientDigital/components/content/digital/guide-detail"
+            guideDatailTitle="Article"
+            guideDetailImage="/content/dam/PerficientDigital/image_04.png"
+            textIsRich="true"
+            words="&lt;p>The consumer markets industry has experienced a rapid transformation driven by trends in commerce, personalization, same-day delivery, cybersecurity, and elsewhere. In 2014, a wave of major shifts began reshaping the consumer markets industry. To keep pace with high consumer expectations and demands, organizations must transform complex data into simple operations while gaining insights and customer service responses.&lt;/p>&#xd;&#xa;&lt;p>The digital era has created opportunities and challenges for organizations that try to engage&lt;/p>&#xd;&#xa;&lt;p>&lt;b>In this paper, we address eight trends that are changing consumer shopping habits and influencing the consumer markets industry in 2015:&lt;/b>&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>Lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;/li>&#xd;&#xa;&lt;li>Sed do eiusmod tempor incididunt ut labore et dolore&lt;/li>&#xd;&#xa;&lt;li>Magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"/>
+        <downloadGuide
+            jcr:lastModified="{Date}2019-03-25T11:59:12.212+08:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="PerficientDigital/components/content/digital/download-guide"
+            email="Email"
+            firstName="Frist Name"
+            lastName="Last Name"
+            textOfGetTheGuide="get the guide"
+            title="Complete Form To Download">
+            <additionalFormItems jcr:primaryType="nt:unstructured">
+                <item0
+                    jcr:primaryType="nt:unstructured"
+                    isRequired="true"
+                    label="Company"/>
+                <item1
+                    jcr:primaryType="nt:unstructured"
+                    isRequired="false"
+                    label="Job Title"/>
+                <item2
+                    jcr:primaryType="nt:unstructured"
+                    isRequired="false"
+                    label="Phone"/>
+            </additionalFormItems>
+        </downloadGuide>
+    </jcr:content>
+</jcr:root>

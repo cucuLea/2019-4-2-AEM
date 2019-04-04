@@ -1,0 +1,20 @@
+
+
+
+<section class="hero ${properties.backgroundColor == null ? 'red' : properties.backgroundColor} ${properties.heroPosition == null ? 'left' : properties.heroPosition } circle-${properties.circleContentColor == null ? 'grey' : properties.circleContentColor}" id="hero-services">
+        <div class="hero-background-container">
+
+            <img class="hero-background large-loaded" src=${properties.backgroundImg} data-image=${properties.backgroundImg} alt="Do not have default picture!" />
+        </div>
+    <div class="color-container ${properties.heroPosition == null ? 'left' : properties.heroPosition }">
+            <h2 class="content-circle">${properties.circleContent == null ? 'WE HAVE A PASSION FOR SOLVING PROBLEMS' : properties.circleContent}</h2>
+        <i class="icon icon-blockangle"></i>
+        <div class="hero-content" >
+            <h1>${properties.heroText == null ? 'INSIGHTS' : properties.heroContent}</h1>
+        </div>
+    </div>
+</section>
+
+
+
+

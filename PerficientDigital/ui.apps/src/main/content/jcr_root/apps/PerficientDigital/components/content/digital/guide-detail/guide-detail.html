@@ -1,0 +1,24 @@
+<section class="hero hero-guides">
+  <i class="icon icon-blockangle"></i>
+  <a href="#" class="link-back">Guides</a>
+  <h1>${properties.guideDatailTitle == null ? pageProperties.jcr:title : properties.guideDatailTitle}</h1>
+  <div class="container guides-block">
+    <div class="row">
+      <div class="col-md-6">
+
+		<div class="col-md-12 cms-tags" data-sly-list.item="${pageProperties.cq:tags}">
+          <a href="#">${item}</a>                    
+        </div> 
+ 
+        <h1>${properties.guideDatailTitle == null ? pageProperties.jcr:title : properties.guideDatailTitle}</h1>
+ 			<br/>
+ 			${properties.words @context='html'}
+      </div>
+       <div class="col-md-6">
+          <img src="${properties.guideDetailImage}">
+      </div>
+    </div>
+    
+  </div>
+
+</section>

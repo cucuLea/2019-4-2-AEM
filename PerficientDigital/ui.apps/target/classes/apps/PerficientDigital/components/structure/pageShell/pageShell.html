@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<sly data-sly-include="/libs/wcm/core/components/init/init.jsp"></sly>  
+
+<meta name='author' content='${(properties.author==null||properties.author=="") ? properties.jcr:createdBy : properties.author}'/> 
+<meta name='title' content='${properties.jcr:title}'/> 
+<meta name='description' content='${properties.jcr:description}'/> 
+<meta name='trainer' content='${properties.trainer}'/> 
+<meta name='training_date' content='${"yyyy-MM-dd" @ format=properties.trainingDate}'/>
+
+<sly data-sly-include="headclientlibs.html"></sly>
+
+</head>
+
+<body>
+
+<div data-sly-include="header.html"></div>
+<div data-sly-include="bodyInfo.html"></div>
+<div data-sly-include="footer.html"></div>
+
+
+<div data-sly-include="footerclientlibs.html"></div>
+</body>
+
+
+</html>
